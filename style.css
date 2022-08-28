@@ -1,0 +1,262 @@
+body{
+    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ"
+                 ,Meiryo,"MS Ｐゴシック","MS PGothic",sans-serif;
+    font-size: 14px;
+    margin: 0px;
+}
+.wrapper{
+    margin: 10px;
+    margin-bottom: 0px;
+}
+@media  screen and (min-width: 1081px){
+    .potepan_firstveiw{
+        background-image: url(top-hero.jpeg);
+        background-size: cover;
+        margin-bottom: 0px;
+    }
+    .res_img{
+        display: none;
+    }
+}
+.header_content{
+    display: flex;
+    justify-content: space-between;
+}
+.header_ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    height: 15px;
+    margin-top: 0px;
+}
+.p_logo_img{
+    display: block;
+    height: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.p_logo_img:hover{
+    opacity: 0.7;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+ul p{
+    font-size: small;
+    text-align: center;
+    color: black;
+}
+.header_li{
+    margin-left:2rem;
+}
+.header_li_p{
+    font-size: large;
+    margin-bottom: 0px;
+}
+.caunse{
+    width: 190px;
+    height: 50px;
+    line-height: 50px;
+    background-color:orange;       
+    border-radius: 30px;
+    color: #fff;
+    text-align: center;
+    margin-right: 20px;
+}
+.caunse:hover{ 
+    opacity: 0.7;
+    color: white;
+}
+/*ここまでヘッダー-------------------------------------------------*/
+.main_box{
+    padding-top: 80px;
+    padding-right: 550px;
+    text-align: center;
+}
+.main_moji{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.main_img_box{
+    align-items: center;
+}
+.main_img2{
+    width: 20%;
+}
+.main_zukei{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;  
+}
+.main_kaunse{
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    background-color:orange;       
+    border-radius: 30px;
+    color: #fff;
+    text-align: center;
+    margin-right: 20px;
+}
+.main_kaunse:hover{ 
+    opacity: 0.7;
+    color: white;
+}
+.main_siryou{
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    border-width: 1px;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    left: 500px;
+}
+.main_moji2{
+    opacity: 50%;
+    margin-left: 200px;
+    margin-bottom: 0px;
+}
+/*ここまでメインのコンテンツ------------------------------------------*/
+.sub_box{
+    width: auto;
+    background-color: orange;
+    margin: 0px;
+    padding: 50px;
+}
+.sub_end{
+    padding-left: 100px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+video{
+    display: block;
+    width: 80%;
+}
+.sub_content{
+    max-width: 1189px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub_end_moji{
+    width: 1400px;
+    color: #fff;
+}
+.sub_end_moji h2{
+    font-size: 2.5rem;
+}
+.sub_end_moji p{
+    font-size: large;
+}
+.gakusyu{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+
+}
+.sub_gakusyu{
+    display: flex;
+}
+
+@media screen and (max-width: 1080px){   
+    .header_ul{
+        display: none;
+    }
+    .header_li{
+        display: none;
+    }
+    .header_li_p{
+        display: none;
+    }
+    .p_logo{
+        font-size: 65px;
+    }
+    .header_ham{
+        display: flex;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 100;/* 重なり順を一番上にする */
+        cursor: pointer;
+    }
+    .header_ham_line,
+    .header_ham_line:before,
+    .header_ham_line:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background: #333;
+        transition: 0.5s;
+        position: absolute;
+    }
+    .header_ham_line::before{
+        bottom: 8px;
+    }
+    .header_ham_line:after{
+        top: 8px;
+    }
+    /*ここまでがヘッダ---------------------------*/
+    .res_img{
+        width: 100vw;
+    }
+    /*レスポンシブ用背景画像----------------------*/
+    .main_box{
+        margin-top: -190px;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+    .main_moji{
+        font-size: 25px;
+    }
+    .main_img1{
+        width: 30%;
+    }
+    .main_img2{
+        width: 35%;
+    }
+    .main_img3{
+        width: 30%;
+    }
+    .main_zukei{
+        display: block;
+    }
+    .main_kaunse{
+        margin-right: 0px;
+        width: 100%;
+    }
+    .main_zukei_sryou{
+        display: none;
+    }
+    .main_moji2{
+        margin-left: auto;
+        margin-bottom: 20px;
+    }
+
+    .sub_content{
+        display: block;
+        flex-direction: column;
+    }
+    .sub_box{
+        padding: 20px;
+    }
+    .sub_end{
+        padding: 0px;
+    }
+    video{
+        width: 100%;
+    }
+    .sub_end_moji{
+        width: 100%;
+    }
+}
